@@ -36,13 +36,18 @@ struct SideMenuView: View {
                     } label: {
                         SideMenuOptionView(viewModel: viewModel)
                     }
-                } else if viewModel == .loguot {
-                    
+                } else if viewModel == .logout {
+                    Button {
+                        print("Handle logout here..")
+                    } label: {
+                        SideMenuOptionView(viewModel: viewModel)
+                    }                    
                 } else {
                     SideMenuOptionView(viewModel: viewModel)
                 }
+            }
+            Spacer()
         }
-        Spacer()
     }
 }
 
@@ -51,5 +56,3 @@ struct SideMenuView_Previews: PreviewProvider {
         SideMenuView()
     }
 }
-
-
