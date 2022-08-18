@@ -12,9 +12,15 @@
 		393C302528AAB1DC00185DC5 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C302428AAB1DC00185DC5 /* RoundedShape.swift */; };
 		393C302728AABBCA00185DC5 /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C302628AABBCA00185DC5 /* CustomInputField.swift */; };
 		393C302A28AAD7C100185DC5 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C302928AAD7C100185DC5 /* AuthHeaderView.swift */; };
+		399BC51128ACE78F00A218AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399BC51028ACE78F00A218AF /* GoogleService-Info.plist */; };
+		399BC51428ACF50800A218AF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 399BC51328ACF50800A218AF /* FirebaseAuth */; };
+		399BC51628ACF50800A218AF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 399BC51528ACF50800A218AF /* FirebaseFirestore */; };
+		399BC51828ACF50800A218AF /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 399BC51728ACF50800A218AF /* FirebaseFirestoreSwift */; };
+		399BC51A28ACF50800A218AF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 399BC51928ACF50800A218AF /* FirebaseStorage */; };
+		399BC51C28AD012800A218AF /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399BC51B28AD012800A218AF /* AuthViewModel.swift */; };
+		39A33C5B28AD806700B920EE /* ProfilePhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A33C5A28AD806700B920EE /* ProfilePhotoView.swift */; };
 		39AA1D6228AA6F850001CB06 /* NewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA1D6128AA6F850001CB06 /* NewTweetView.swift */; };
 		39AA1D6428AA716A0001CB06 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AA1D6328AA716A0001CB06 /* TextArea.swift */; };
-		A62475AABC2F5E7CA1B1D496 /* Pods_TwitterProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE04C19476A0933C1B8A6299 /* Pods_TwitterProject.framework */; };
 		B8BDA75F28A01F3300304F33 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDA75E28A01F3300304F33 /* SideMenuView.swift */; };
 		B8BDA76128A01F5700304F33 /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDA76028A01F5700304F33 /* SideMenuRowView.swift */; };
 		B8BDA76328A01F7600304F33 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BDA76228A01F7600304F33 /* SideMenuViewModel.swift */; };
@@ -41,9 +47,11 @@
 		393C302428AAB1DC00185DC5 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
 		393C302628AABBCA00185DC5 /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
 		393C302928AAD7C100185DC5 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
+		399BC51028ACE78F00A218AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		399BC51B28AD012800A218AF /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		39A33C5A28AD806700B920EE /* ProfilePhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoView.swift; sourceTree = "<group>"; };
 		39AA1D6128AA6F850001CB06 /* NewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetView.swift; sourceTree = "<group>"; };
 		39AA1D6328AA716A0001CB06 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
-		4C853DE559010F8A7C6B2FDF /* Pods-TwitterProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterProject.release.xcconfig"; path = "Target Support Files/Pods-TwitterProject/Pods-TwitterProject.release.xcconfig"; sourceTree = "<group>"; };
 		B8BDA75E28A01F3300304F33 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		B8BDA76028A01F5700304F33 /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowView.swift; sourceTree = "<group>"; };
 		B8BDA76228A01F7600304F33 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
@@ -63,8 +71,6 @@
 		B8CDA163289C32DB00A24F8B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B8CDA165289C572400A24F8B /* TweetFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFilterViewModel.swift; sourceTree = "<group>"; };
 		B8CDA16A289C5FDB00A24F8B /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
-		BE04C19476A0933C1B8A6299 /* Pods_TwitterProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitterProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F22D33CBDAD935E9B37DA843 /* Pods-TwitterProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterProject.debug.xcconfig"; path = "Target Support Files/Pods-TwitterProject/Pods-TwitterProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +78,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A62475AABC2F5E7CA1B1D496 /* Pods_TwitterProject.framework in Frameworks */,
+				399BC51428ACF50800A218AF /* FirebaseAuth in Frameworks */,
+				399BC51628ACF50800A218AF /* FirebaseFirestore in Frameworks */,
+				399BC51A28ACF50800A218AF /* FirebaseStorage in Frameworks */,
+				399BC51828ACF50800A218AF /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +102,7 @@
 			children = (
 				393C302028AAAA1500185DC5 /* LoginView.swift */,
 				393C302228AAAA2900185DC5 /* RegistrationView.swift */,
+				39A33C5A28AD806700B920EE /* ProfilePhotoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -100,6 +110,7 @@
 		393C301F28AAA9F700185DC5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				399BC51B28AD012800A218AF /* AuthViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -139,18 +150,8 @@
 		4505DD8162B6AA8090560CA2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F22D33CBDAD935E9B37DA843 /* Pods-TwitterProject.debug.xcconfig */,
-				4C853DE559010F8A7C6B2FDF /* Pods-TwitterProject.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		4DA5CE718DA60FC1ED9FFC23 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BE04C19476A0933C1B8A6299 /* Pods_TwitterProject.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B8BDA75B28A01EFA00304F33 /* SideMenu */ = {
@@ -186,7 +187,6 @@
 				B8CDA138289C19F200A24F8B /* TwitterProject */,
 				B8CDA137289C19F200A24F8B /* Products */,
 				4505DD8162B6AA8090560CA2 /* Pods */,
-				4DA5CE718DA60FC1ED9FFC23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -208,6 +208,7 @@
 				B8CDA139289C19F200A24F8B /* TwitterProjectApp.swift */,
 				B8CDA13B289C19F200A24F8B /* ContentView.swift */,
 				B8CDA13D289C19F400A24F8B /* Assets.xcassets */,
+				399BC51028ACE78F00A218AF /* GoogleService-Info.plist */,
 				B8CDA13F289C19F400A24F8B /* Preview Content */,
 			);
 			path = TwitterProject;
@@ -225,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				B8CDA14C289C210200A24F8B /* Components */,
+				393C301D28AAA9D100185DC5 /* Authentication */,
 				39AA1D5E28AA6F3D0001CB06 /* UploadTweet */,
 				B8BDA75B28A01EFA00304F33 /* SideMenu */,
 				B8CDA15A289C30FE00A24F8B /* Profile */,
@@ -233,7 +235,6 @@
 				B8CDA157289C308200A24F8B /* Messages */,
 				B8CDA154289C2EAF00A24F8B /* MainTab */,
 				B8CDA14B289C20F900A24F8B /* Feed */,
-				393C301D28AAA9D100185DC5 /* Authentication */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -393,7 +394,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8CDA144289C19F400A24F8B /* Build configuration list for PBXNativeTarget "TwitterProject" */;
 			buildPhases = (
-				AF40B050427523E4A5B6D57B /* [CP] Check Pods Manifest.lock */,
 				B8CDA132289C19F200A24F8B /* Sources */,
 				B8CDA133289C19F200A24F8B /* Frameworks */,
 				B8CDA134289C19F200A24F8B /* Resources */,
@@ -404,6 +404,12 @@
 			dependencies = (
 			);
 			name = TwitterProject;
+			packageProductDependencies = (
+				399BC51328ACF50800A218AF /* FirebaseAuth */,
+				399BC51528ACF50800A218AF /* FirebaseFirestore */,
+				399BC51728ACF50800A218AF /* FirebaseFirestoreSwift */,
+				399BC51928ACF50800A218AF /* FirebaseStorage */,
+			);
 			productName = TwitterProject;
 			productReference = B8CDA136289C19F200A24F8B /* TwitterProject.app */;
 			productType = "com.apple.product-type.application";
@@ -432,6 +438,9 @@
 				Base,
 			);
 			mainGroup = B8CDA12D289C19F200A24F8B;
+			packageReferences = (
+				399BC51228ACF50800A218AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B8CDA137289C19F200A24F8B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -448,6 +457,7 @@
 			files = (
 				B8CDA141289C19F400A24F8B /* Preview Assets.xcassets in Resources */,
 				B8CDA13E289C19F400A24F8B /* Assets.xcassets in Resources */,
+				399BC51128ACE78F00A218AF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +466,8 @@
 /* Begin PBXShellScriptBuildPhase section */
 		39BE9D5F28A5640400920205 /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (
@@ -471,28 +482,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		AF40B050427523E4A5B6D57B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TwitterProject-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -514,6 +503,7 @@
 				B8BDA75F28A01F3300304F33 /* SideMenuView.swift in Sources */,
 				39AA1D6228AA6F850001CB06 /* NewTweetView.swift in Sources */,
 				B8CDA13A289C19F200A24F8B /* TwitterProjectApp.swift in Sources */,
+				39A33C5B28AD806700B920EE /* ProfilePhotoView.swift in Sources */,
 				B8CDA15C289C311900A24F8B /* ExploreView.swift in Sources */,
 				B8BDA76328A01F7600304F33 /* SideMenuViewModel.swift in Sources */,
 				393C302528AAB1DC00185DC5 /* RoundedShape.swift in Sources */,
@@ -521,6 +511,7 @@
 				B8CDA16B289C5FDB00A24F8B /* UserRowView.swift in Sources */,
 				393C302128AAAA1500185DC5 /* LoginView.swift in Sources */,
 				B8CDA156289C2EC500A24F8B /* MainTabView.swift in Sources */,
+				399BC51C28AD012800A218AF /* AuthViewModel.swift in Sources */,
 				393C302A28AAD7C100185DC5 /* AuthHeaderView.swift in Sources */,
 				B8CDA15E289C313F00A24F8B /* NotificationsView.swift in Sources */,
 				393C302328AAAA2900185DC5 /* RegistrationView.swift in Sources */,
@@ -646,7 +637,6 @@
 		};
 		B8CDA145289C19F400A24F8B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F22D33CBDAD935E9B37DA843 /* Pods-TwitterProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -676,7 +666,6 @@
 		};
 		B8CDA146289C19F400A24F8B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C853DE559010F8A7C6B2FDF /* Pods-TwitterProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -726,6 +715,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		399BC51228ACF50800A218AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		399BC51328ACF50800A218AF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 399BC51228ACF50800A218AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		399BC51528ACF50800A218AF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 399BC51228ACF50800A218AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		399BC51728ACF50800A218AF /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 399BC51228ACF50800A218AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		399BC51928ACF50800A218AF /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 399BC51228ACF50800A218AF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B8CDA12E289C19F200A24F8B /* Project object */;
 }
