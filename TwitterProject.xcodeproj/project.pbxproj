@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3912C9AB28AFA4200040A9DD /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3912C9AA28AFA4200040A9DD /* ImagePicker.swift */; };
+		3912C9AD28AFD6D60040A9DD /* ImageUploder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3912C9AC28AFD6D60040A9DD /* ImageUploder.swift */; };
 		393C302128AAAA1500185DC5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C302028AAAA1500185DC5 /* LoginView.swift */; };
 		393C302328AAAA2900185DC5 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C302228AAAA2900185DC5 /* RegistrationView.swift */; };
 		393C302528AAB1DC00185DC5 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393C302428AAB1DC00185DC5 /* RoundedShape.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3912C9AA28AFA4200040A9DD /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		3912C9AC28AFD6D60040A9DD /* ImageUploder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploder.swift; sourceTree = "<group>"; };
 		393C302028AAAA1500185DC5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		393C302228AAAA2900185DC5 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		393C302428AAB1DC00185DC5 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
@@ -88,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3912C9A928AFA3FA0040A9DD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3912C9AA28AFA4200040A9DD /* ImagePicker.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		393C301D28AAA9D100185DC5 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +213,7 @@
 		B8CDA138289C19F200A24F8B /* TwitterProject */ = {
 			isa = PBXGroup;
 			children = (
+				3912C9A928AFA3FA0040A9DD /* Utils */,
 				B8CDA14A289C20A600A24F8B /* Extension */,
 				B8CDA149289C20A200A24F8B /* Model */,
 				B8CDA148289C209200A24F8B /* Service */,
@@ -242,6 +255,7 @@
 		B8CDA148289C209200A24F8B /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				3912C9AC28AFD6D60040A9DD /* ImageUploder.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -496,6 +510,7 @@
 				B8CDA13C289C19F200A24F8B /* ContentView.swift in Sources */,
 				B8BDA76128A01F5700304F33 /* SideMenuRowView.swift in Sources */,
 				B8CDA153289C228200A24F8B /* TweetRowView.swift in Sources */,
+				3912C9AD28AFD6D60040A9DD /* ImageUploder.swift in Sources */,
 				393C302728AABBCA00185DC5 /* CustomInputField.swift in Sources */,
 				B8CDA166289C572400A24F8B /* TweetFilterViewModel.swift in Sources */,
 				39AA1D6428AA716A0001CB06 /* TextArea.swift in Sources */,
@@ -503,6 +518,7 @@
 				B8BDA75F28A01F3300304F33 /* SideMenuView.swift in Sources */,
 				39AA1D6228AA6F850001CB06 /* NewTweetView.swift in Sources */,
 				B8CDA13A289C19F200A24F8B /* TwitterProjectApp.swift in Sources */,
+				3912C9AB28AFA4200040A9DD /* ImagePicker.swift in Sources */,
 				39A33C5B28AD806700B920EE /* ProfilePhotoView.swift in Sources */,
 				B8CDA15C289C311900A24F8B /* ExploreView.swift in Sources */,
 				B8BDA76328A01F7600304F33 /* SideMenuViewModel.swift in Sources */,

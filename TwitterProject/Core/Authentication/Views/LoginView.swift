@@ -14,9 +14,11 @@ struct LoginView: View {
     
     var body: some View {
         VStack {
+            
             NavigationLink(destination: ProfilePhotoView(),
                                        isActive: $viewModel.addPhoto,
                                        label: { })
+            
             AuthHeaderView(title1: "Hello", title2: "Welcme back")
             
             VStack(spacing: 40) {
@@ -48,7 +50,8 @@ struct LoginView: View {
             }
             
             Button {
-                viewModel.login(withEmail: email, password: password)
+                viewModel.login(withEmail: email,
+                                password: password)
             } label: {
                 Text("Sign In..")
                     .font(.headline)
@@ -57,8 +60,8 @@ struct LoginView: View {
                     .background(Color(.systemBlue))
                     .clipShape(Capsule())
                     .padding()
-                    .shadow(color: .gray.opacity(0.5), radius: 10, x: 0, y: 0)
             }
+            .shadow(color: .gray.opacity(0.5), radius: 10, x: 0, y: 0)
             
             Spacer()
             

@@ -40,6 +40,7 @@ struct SideMenuView: View {
                     }
                 } else if viewModel == .logout {
                     Button {
+                        authViewModel.showMenu = false
                         authViewModel.signOut()
                     } label: {
                         SideMenuOptionView(viewModel: viewModel)

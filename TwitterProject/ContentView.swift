@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var showMenu = false
     @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
@@ -34,15 +33,15 @@ extension ContentView {
     var mainInterfaceView: some View {
         ZStack(alignment: .topLeading) {
             MainTabView()
-                .navigationBarHidden(showMenu)
+                .navigationBarHidden(viewModel.showMenu)
             
-            if showMenu {
+            if viewModel.showMenu {
                 ZStack {
                     Color(.black)
-                        .opacity(showMenu ? 0.25 : 0.0)
+                        .opacity(viewModel.showMenu ? 0.25 : 0.0)
                 } .onTapGesture {
                     withAnimation {
-                        showMenu = false
+                        viewModel.showMenu = false
                     }
                 }
                 .ignoresSafeArea()
@@ -50,8 +49,8 @@ extension ContentView {
             
             SideMenuView()
                 .frame(width: 300)
-                .offset(x: showMenu ? 0 : -300, y: 0)
-                .background(showMenu ? Color.white : Color.clear)
+                .offset(x: viewModel.showMenu ? 0 : -300, y: 0)
+                .background(viewModel.showMenu ? Color.white : Color.clear)
         }
         .navigationTitle("Home")
         .navigationBarTitleDisplayMode(.inline)
@@ -59,7 +58,8 @@ extension ContentView {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
                     withAnimation {
-                        showMenu.toggle()
+                        viewModel.showMenu = true
+//                        viewModel.showMenu.toggle()
                     }
                 } label: {
                     Circle()
