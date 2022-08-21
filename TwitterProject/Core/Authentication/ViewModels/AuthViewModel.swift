@@ -7,18 +7,19 @@
 
 import SwiftUI
 import Firebase
-import FirebaseAuth
+
 
 class AuthViewModel: ObservableObject {
     @Published var showMenu = false
-    @Published var userSession: FirebaseAuth.User?
-    @Published var addPhoto: Bool = false
+    @Published var userSession: Firebase.User?
+    @Published var addPhoto: Bool = false  // insted didAuthenticationUser
 //    { willSet { print("willSet addPhoto - \(newValue)") }}
-    private var tempUserSession: FirebaseAuth.User?
+    private var tempUserSession: Firebase.User?
+    private var service = UserService()
     
     init() {
         self.userSession = Auth.auth().currentUser
-//        print("DEBUG: User session is \(String(describing: self.userSession?.uid))")
+        self.fetchUser()
     }
     
     // sign in
@@ -31,9 +32,6 @@ class AuthViewModel: ObservableObject {
             }
             guard let user = result?.user else { return }
             self.userSession = user
-            
-//            print("DEBUG: Sign in user successfully")
-//            print("DEBUG: User is the \(String(describing: self.userSession?.uid))")
         }
     }
     
@@ -47,10 +45,9 @@ class AuthViewModel: ObservableObject {
             }
             guard let user = result?.user else { return }
             self.tempUserSession = user
-//            self.userSession = user
 
             print("DEBUG: Register user successfully")
-            print("DEBUG: User is \(String(describing: self.userSession?.uid))")
+//            print("DEBUG: User is \(String(describing: self.userSession?.uid))")
 
             // save user authentication to Firebase Dastabase
             // cretate an array
@@ -62,7 +59,6 @@ class AuthViewModel: ObservableObject {
             Firestore.firestore().collection("users")
                 .document(user.uid)
                 .setData(data) { [unowned self]_ in
-                    
                     self.addPhoto = true
 //                    print("firestore - \(self.addPhoto)")
                 }
@@ -75,15 +71,22 @@ class AuthViewModel: ObservableObject {
         try? Auth.auth().signOut()
     }
     
+    // выгрузить url картинки профиля в Firebase Database
     func uplodProfileImge(_ image: UIImage) {
         guard let uid = tempUserSession?.uid else { return }
         
-        ImageUploader.uploadImage(image: image) { profileImage in
+        ImageUploader.uploadImage(image: image) { profileImageUrl in
             Firestore.firestore().collection("users")
                 .document(uid)
                 .updateData(["profileImageUrl": profileImageUrl]) { _ in
                     self.userSession = self.tempUserSession
                 }
         }
+    }
+    
+    func fetchUser() {
+        guard let uid = self.userSession?.uid else { return }  // get user uid
+        
+        service.fetchUser(withUid: uid)
     }
 }

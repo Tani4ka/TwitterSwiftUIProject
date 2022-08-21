@@ -21,8 +21,7 @@ struct TwitterProjectApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-//                ContentView()
-                ProfilePhotoView()
+                ContentView()
             }
             // transfering viewModel to ither files
             .environmentObject(viewModel)

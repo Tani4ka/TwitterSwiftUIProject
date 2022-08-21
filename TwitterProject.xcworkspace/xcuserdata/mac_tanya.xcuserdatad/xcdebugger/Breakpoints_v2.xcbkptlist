@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DFACBF60-9D3D-4C02-8A97-262452170FF4"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9BB0CD1-9747-4393-B38D-D0255BB16AF6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TwitterProject/Service/ImageUploder.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "uploadImage(image:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E9BB0CD1-9747-4393-B38D-D0255BB16AF6 - 46da8364b13599c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;FirebaseStorage.StorageMetadata&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static TwitterProject.ImageUploader.uploadImage(image: __C.UIImage, completion: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "TwitterProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac_tanya/Documents/Swift/TwitterProject/TwitterProject/Service/ImageUploder.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "193">
+               </Location>
+               <Location
+                  uuid = "E9BB0CD1-9747-4393-B38D-D0255BB16AF6 - 46da8364b13599c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;FirebaseStorage.StorageMetadata&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static TwitterProject.ImageUploader.uploadImage(image: __C.UIImage, completion: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "TwitterProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac_tanya/Documents/Swift/TwitterProject/TwitterProject/Service/ImageUploder.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "221">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

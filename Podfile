@@ -6,5 +6,5 @@ target 'TwitterProject' do
   use_frameworks!
 
   # Pods for TwitterProject
-pod 'Firebase/Storage'
+# pod 'Firebase/Storage'
 end
